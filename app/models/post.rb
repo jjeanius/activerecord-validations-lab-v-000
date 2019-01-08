@@ -1,11 +1,11 @@
 class Post < ActiveRecord::Base
 
-  validator :valid_attrs, validates_with:
+  def validator_each(title, content, summary, category)
   validates :title, presence: true
   validates :content, presence: true, length: { minimum: 250}
   validates :summary, presence: true, length: { maximum: 250}
   validates :category, inclusion: {in: %w(Ficture  Non-Fiction)}
-
+end
 
 end
 # Post category is either Fiction or Non-Fiction This step requires
