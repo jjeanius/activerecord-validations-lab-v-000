@@ -3,5 +3,5 @@ class Post < ActiveRecord::Base
   validates :content, presence: true, length: { minimum: 250}
 
 end
-Post content is at least 250 characters long
-Post summary is a maximum of 250 characters
+#Post content is at least 250 characters long
+#Post summary is a maximum of 250 characters#
