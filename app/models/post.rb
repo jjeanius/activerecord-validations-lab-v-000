@@ -1,6 +1,6 @@
 class Post < ActiveRecord::Base
 
-  eachvalidates :valid_attrs, presence: true
+  validates :valid_attrs
   validates :title, presence: true
   validates :content, presence: true, length: { minimum: 250}
   validates :summary, presence: true, length: { maximum: 250}
