@@ -3,5 +3,3 @@ class Post < ActiveRecord::Base
   validates :short_content, length: { minimum: 250}
 
 end
-
-
