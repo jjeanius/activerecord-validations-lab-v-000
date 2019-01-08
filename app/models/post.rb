@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-  validator :Post, validates_with
+  validator :Post, validates_with:
   validates :title, presence: true
   validates :content, presence: true, length: { minimum: 250}
   validates :summary, presence: true, length: { maximum: 250}
